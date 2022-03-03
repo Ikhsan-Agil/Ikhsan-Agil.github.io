@@ -1,0 +1,530 @@
+/* List of Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    background-color: #222831;
+    color: #eeeeee;
+}
+
+header h1 {
+    font-family: 'Sail', cursive;
+    font-size: 2.5rem;
+}
+
+#hamburger,
+#close {
+    display: none;
+    border: none;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid #a6a6a6;
+    color: #a6a6a6;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+/* header h1 a:hover {
+    text-shadow: ;
+} */
+
+nav ul li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 1em;
+}
+
+nav a {
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 1.2rem;
+}
+
+#home {
+    background-color: #393e46;
+}
+
+#home h2 {
+    font-family: 'Lobster', cursive;
+    color: #eeeeee;
+    font-size: 3.2rem;
+    padding: 110px 0 30px 80px;
+}
+
+#home p {
+    font-family: 'Lato', sans-serif;
+    color: #eeeeee;
+    font-size: 2.2rem;
+    padding: 0 0 30px 80px;
+    width: 80%;
+}
+
+#idButton {
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    background-color: #eeeeee;
+    border: none;
+    cursor: pointer;
+    color: #222831;
+    font-size: 1.5rem;
+    padding: 15px 40px;
+    margin: 0 0 140px 80px;
+    border-radius: 10px;
+}
+
+#idButton:hover {
+    background-color: #222831;
+    color: #eeeeee;
+    font-weight: bold;
+}
+
+#skills {
+    font-family: 'Lato', sans-serif;
+    background-color: #222831;
+    padding-bottom: 40px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #eeeeee;
+    font-size: 2.5rem;
+    padding: 120px 0 20px 0;
+}
+
+#tag {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    margin: 40px auto;
+    justify-content: center;
+}
+
+#tag button {
+    border: none;
+    border-bottom: 2px solid #a6a6a6;
+    background: none;
+    cursor: pointer;
+    color: #a6a6a6;
+    font-size: 1.3rem;
+    padding: 10px 50px;
+}
+
+#tag #hardSkillBtn {
+    font-weight: 600;
+    border-bottom: 4px solid #eeeeee;
+    color: #eeeeee;
+}
+
+/* #tag button:hover {
+    border-bottom: 4px solid #eeeeee;
+    color: #eeeeee;
+} */
+
+.hardSkillDesc,
+.softSkillDesc {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sk-img {
+    height: 200px;
+}
+
+.softSkillDesc {
+    display: none;
+}
+.soft {
+    height: 180px;
+    background: #a6a6a6;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+figure {
+    display: block;
+    margin: 10px auto 50px;
+}
+
+figcaption {
+    font-weight: 500;
+    text-align: center;
+    color: #eeeeee;
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+#projects {
+    background-color: #393e46;
+    padding-bottom: 40px;
+}
+
+.p-img {
+    display: block;
+    width: 300px;
+    margin: 5px auto;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.cards {
+    font-family: 'Lato', sans-serif;
+    background-color: #eeeeee;
+    width: 305px;
+    border: 4px solid #fd7014;
+    border-radius: 10px;
+    margin: 20px;
+    padding-bottom: 10px;
+}
+
+.cards h4,
+.cards p {
+    padding: 2px 13px;
+}
+
+#certifications {
+    background-color: #222831;
+    color: #eeeeee;
+    padding-bottom: 70px;
+}
+
+.box {
+    font-family: 'Lato', sans-serif;
+    display: block;
+    background-color: #eeeeee;
+    color: #222831;
+    font-size: 1.3rem;
+    padding: 10px;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.orange {
+    background-color: #fd7014;
+    color: #eeeeee;
+}
+
+.navyblue {
+    background-color: #222831;
+    color: #eeeeee;
+}
+
+.under {
+    margin-bottom: 30px;
+}
+
+#activities {
+    background-color: #393e46;
+    padding-bottom: 70px;
+}
+
+aside {
+    background-color: #a6a6a6;
+    padding: 50px 0 50px;
+}
+
+#profile img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid #eeeeee;
+}
+
+#profile p {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+footer {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    background-color: #222831;
+    color: #eeeeee;
+    font-size: 1.9rem;
+    padding: 30px 0;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.btn-icons {
+    margin: 10px 0;
+    background: none;
+    padding: 0.7em;
+    border-radius: 1rem;
+    border: 0.3em solid #eeeeee;
+    cursor: pointer;
+    color: #eeeeee;
+}
+.btn-icons:hover {
+    color: #222831;
+    background-color: #eeeeee;
+}
+
+.btn-icons i {
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #home h2 {
+        font-size: 2.6rem;
+    }
+
+    #home p {
+        font-size: 1.8rem;
+    }
+
+    .title {
+        padding-top: 170px;
+        font-size: 2rem;
+    }
+
+    #tag button {
+        border: none;
+        border-bottom: 2px solid #a6a6a6;
+        background: none;
+        cursor: pointer;
+        color: #a6a6a6;
+        font-size: 1.9rem;
+        padding: 10px 20px;
+    }
+
+    figcaption {
+        font-weight: 500;
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    .sk-img {
+        height: 150px;
+    }
+
+    .soft {
+        height: 130px;
+    }
+
+    .p-img {
+        display: block;
+        width: 97%;
+        margin: 5px auto;
+    }
+
+    .flex-column {
+        display: block;
+    }
+    .flex-row {
+        display: block;
+    }
+    .cards {
+        display: block;
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    .cards h4,
+    .cards p {
+        font-size: 1.9rem;
+    }
+
+    .box {
+        font-size: 1.8rem;
+        width: 70%;
+        padding: 20px;
+    }
+
+    #profile img {
+        display: block;
+        margin: 0 auto;
+        width: 350px;
+        border-radius: 50%;
+    }
+
+    #profile p {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    #hamburger {
+        display: flex;
+        font-size: 2.5rem;
+    }
+
+    #close {
+        font-size: 2.5rem;
+    }
+
+    nav {
+        margin: 0;
+        display: none;
+        padding: 0 30px;
+    }
+
+    nav ul li {
+        padding: 30px 0;
+    }
+
+    nav a {
+        font-size: 2rem;
+        float: right;
+    }
+
+    #idButton {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #hamburger {
+        display: flex;
+        font-size: 1.5rem;
+    }
+
+    #close {
+        font-size: 1.5rem;
+    }
+
+    header h1 {
+        font-family: 'Sail', cursive;
+        font-size: 1.7rem;
+        width: 50%;
+    }
+
+    #home h2 {
+        font-size: 2rem;
+        padding: 150px 0 10px 20px;
+    }
+
+    #home p {
+        font-size: 1.2rem;
+        padding: 10px 0 20px 20px;
+        width: 80%;
+    }
+
+    nav {
+        display: none;
+        padding: 10px;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+        font-size: 1.3rem;
+    }
+
+    nav a {
+        font-size: 1.6rem;
+        float: right;
+    }
+
+    #idButton {
+        font-size: 1.4rem;
+        padding: 10px 30px;
+        margin: 0 0 150px 20px;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 2.2rem;
+        padding: 170px 0 20px 0;
+    }
+
+    #skills {
+        display: block;
+        padding-bottom: 30px;
+    }
+
+    #tag {
+        display: flex;
+        margin: 20px auto 40px;
+        justify-content: center;
+    }
+
+    #tag button {
+        border: none;
+        border-bottom: 2px solid #a6a6a6;
+        background: none;
+        cursor: pointer;
+        color: #a6a6a6;
+        font-size: 1.3rem;
+        padding: 10px 20px;
+    }
+
+    .hardSkillDesc,
+    .softSkillDesc {
+        flex-direction: column;
+    }
+
+    .sk-img {
+        display: block;
+        margin: 20px auto;
+        height: 100px;
+    }
+
+    #projects {
+        padding-bottom: 40px;
+    }
+
+    .cards h4,
+    .cards p {
+        font-size: 1.3rem;
+    }
+
+    .box {
+        font-size: 1.3rem;
+    }
+
+    #profile img {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    #profile p {
+        font-size: 1.4rem;
+    }
+}
