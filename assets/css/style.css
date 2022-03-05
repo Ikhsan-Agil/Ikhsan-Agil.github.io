@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 * {
     margin: 0;
@@ -23,8 +24,12 @@ header .container {
 }
 
 header h1 {
-    font-family: 'Sail', cursive;
+    font-family: 'Satisfy', cursive;
     font-size: 2.5rem;
+}
+
+.logo {
+    font-family: 'Satisfy', cursive;
 }
 
 #hamburger,
@@ -61,6 +66,15 @@ nav a {
     font-size: 1.2rem;
 }
 
+.nav-click {
+    display: block;
+    position: absolute;
+    top: 6.7rem;
+    right: 0;
+    background-color: #222831;
+    width: 100%;
+}
+
 #home {
     background-color: #393e46;
 }
@@ -69,7 +83,7 @@ nav a {
     font-family: 'Lobster', cursive;
     color: #eeeeee;
     font-size: 3.2rem;
-    padding: 110px 0 30px 80px;
+    padding: 60px 0 30px 80px;
 }
 
 #home p {
@@ -156,7 +170,7 @@ nav a {
 }
 .soft {
     height: 180px;
-    background: #a6a6a6;
+    background: #fd7014;
     padding: 10px;
     border-radius: 5px;
 }
@@ -254,7 +268,11 @@ figcaption {
 
 aside {
     background-color: #a6a6a6;
-    padding: 50px 0 50px;
+    padding: 50px 0;
+}
+
+#profile {
+    padding: 130px 0;
 }
 
 #profile img {
@@ -338,7 +356,7 @@ footer a {
 
 .modal-desc {
     font-family: 'Lato', sans-serif;
-    margin-left: 1.5em;
+    margin: 0 1.5em;
 }
 
 .modal-desc h4 {
@@ -435,6 +453,22 @@ footer a {
     #profile p {
         font-size: 2rem;
     }
+
+    .modal {
+        width: 100%;
+        height: 65%;
+    }
+
+    .b-img {
+        width: 80%;
+    }
+
+    .modal-desc h4 {
+        font-size: 2rem;
+    }
+    .modal-desc p {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 840px) {
@@ -466,8 +500,28 @@ footer a {
         float: right;
     }
 
+    .logo {
+        display: block;
+    }
+
     #idButton {
         font-size: 1.8rem;
+    }
+
+    .modal {
+        width: 100%;
+        height: 65%;
+    }
+
+    .b-img {
+        width: 80%;
+    }
+
+    .modal-desc h4 {
+        font-size: 2rem;
+    }
+    .modal-desc p {
+        font-size: 1.5rem;
     }
 }
 
@@ -482,14 +536,12 @@ footer a {
     }
 
     header h1 {
-        font-family: 'Sail', cursive;
         font-size: 1.7rem;
-        width: 50%;
     }
 
     #home h2 {
         font-size: 2rem;
-        padding: 150px 0 10px 20px;
+        padding: 100px 0 10px 20px;
     }
 
     #home p {
@@ -510,13 +562,12 @@ footer a {
 
     nav a {
         font-size: 1.6rem;
-        float: right;
     }
 
     #idButton {
         font-size: 1.4rem;
         padding: 10px 30px;
-        margin: 0 0 150px 20px;
+        margin: 0 0 100px 20px;
     }
 
     .title {
@@ -579,5 +630,21 @@ footer a {
 
     #profile p {
         font-size: 1.4rem;
+    }
+
+    .modal {
+        width: 100%;
+        height: 67%;
+    }
+
+    .b-img {
+        width: 83%;
+    }
+
+    .modal-desc h4 {
+        font-size: 1.6rem;
+    }
+    .modal-desc p {
+        font-size: 1.3rem;
     }
 }

@@ -2,15 +2,18 @@
 const hamburger = document.getElementById('hamburger');
 let navbar = document.querySelector('nav');
 let list = document.querySelector('ul');
+let container = document.querySelector('container');
 let close = document.getElementById('close');
+
 hamburger.addEventListener('click', function (event) {
-    navbar.setAttribute('style', 'display: block; position: absolute; top: 7.4rem; right: 0; background-color: #222831; width: 100%;');
+    navbar.classList.add('nav-click');
     list.setAttribute('style', 'display: flex; flex-direction: column; margin-left: 0;');
     hamburger.setAttribute('style', 'display: none;');
     close.setAttribute('style', 'display: block;');
 });
+
 close.addEventListener('click', function (event) {
-    navbar.setAttribute('style', 'display: none;');
+    navbar.classList.remove('nav-click');
     hamburger.setAttribute('style', 'display: block;');
     close.setAttribute('style', 'display: none;');
 });
@@ -21,35 +24,67 @@ let projectNav = document.querySelector('#projectNav');
 let certificationNav = document.querySelector('#certificationNav');
 let activitiesNav = document.querySelector('#activitiesNav');
 let h1 = document.querySelector('h1');
+let hpMedia = window.matchMedia('(max-width: 480px)');
+let littleTabMedia = window.matchMedia('(max-width: 840px)');
+
 skillNav.addEventListener('click', function (event) {
     skillNav.setAttribute('style', 'text-shadow: 2px 2px 10px #ffffff;');
     projectNav.setAttribute('style', 'text-shadow: none;');
     certificationNav.setAttribute('style', 'text-shadow: none;');
     activitiesNav.setAttribute('style', 'text-shadow: none;');
+    if (hpMedia.matches || littleTabMedia.matches) {
+        navbar.classList.remove('nav-click');
+        hamburger.setAttribute('style', 'display: block;');
+        close.setAttribute('style', 'display: none;');
+    }
 });
+
 projectNav.addEventListener('click', function (event) {
     skillNav.setAttribute('style', 'text-shadow: none;');
     projectNav.setAttribute('style', 'text-shadow: 2px 2px 10px #ffffff;');
     certificationNav.setAttribute('style', 'text-shadow: none;');
     activitiesNav.setAttribute('style', 'text-shadow: none;');
+    if (hpMedia.matches || littleTabMedia.matches) {
+        navbar.classList.remove('nav-click');
+        hamburger.setAttribute('style', 'display: block;');
+        close.setAttribute('style', 'display: none;');
+    }
 });
+
 certificationNav.addEventListener('click', function (event) {
     skillNav.setAttribute('style', 'text-shadow: none;');
     projectNav.setAttribute('style', 'text-shadow: none;');
     certificationNav.setAttribute('style', 'text-shadow: 2px 2px 10px #ffffff;');
     activitiesNav.setAttribute('style', 'text-shadow: none;');
+    if (hpMedia.matches || littleTabMedia.matches) {
+        navbar.classList.remove('nav-click');
+        hamburger.setAttribute('style', 'display: block;');
+        close.setAttribute('style', 'display: none;');
+    }
 });
+
 activitiesNav.addEventListener('click', function (event) {
     skillNav.setAttribute('style', 'text-shadow: none;');
     projectNav.setAttribute('style', 'text-shadow: none;');
     certificationNav.setAttribute('style', 'text-shadow: none;');
     activitiesNav.setAttribute('style', 'text-shadow: 1px 1px 10px #ffffff;');
+    if (hpMedia.matches || littleTabMedia.matches) {
+        navbar.classList.remove('nav-click');
+        hamburger.setAttribute('style', 'display: block;');
+        close.setAttribute('style', 'display: none;');
+    }
 });
+
 h1.addEventListener('click', function (event) {
     skillNav.setAttribute('style', 'text-shadow: none;');
     projectNav.setAttribute('style', 'text-shadow: none;');
     certificationNav.setAttribute('style', 'text-shadow: none;');
     activitiesNav.setAttribute('style', 'text-shadow: none;');
+    if (hpMedia.matches || littleTabMedia.matches) {
+        navbar.classList.remove('nav-click');
+        hamburger.setAttribute('style', 'display: block;');
+        close.setAttribute('style', 'display: none;');
+    }
 });
 
 // for skill button
