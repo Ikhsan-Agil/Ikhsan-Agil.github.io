@@ -1,184 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ikhsan's Corner</title>
-        <link rel="stylesheet" href="assets/css/style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ikhsan's Corner</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-        <script src="https://kit.fontawesome.com/2a1c0f1c85.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <h1><a href="">Ikhsan's Corner</a></h1>
-                <button id="hamburger">&#9776;</button>
-                <button id="close">&#10005;</button>
-                <nav>
-                    <ul>
-                        <li><a href="#skills" id="skillNav">Skills</a></li>
-                        <li><a href="#projects" id="projectNav">Projects</a></li>
-                        <li><a href="#certifications" id="certificationNav">Certifications</a></li>
-                        <li><a href="#activities" id="activitiesNav">Activities</a></li>
-                    </ul>
-                </nav>
+    <script
+      src="https://kit.fontawesome.com/2a1c0f1c85.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1><a href="">Ikhsan's Corner</a></h1>
+        <button id="hamburger">&#9776;</button>
+        <button id="close">&#10005;</button>
+        <nav>
+          <ul>
+            <li><a href="#skills" id="skillNav">Skills</a></li>
+            <li><a href="#projects" id="projectNav">Projects</a></li>
+            <li>
+              <a href="#certifications" id="certificationNav">Certifications</a>
+            </li>
+            <li><a href="#activities" id="activitiesNav">Activities</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div id="content">
+        <article id="home">
+          <h2>
+            Halo! Selamat Datang di&nbsp;
+            <span class="logo">Ikhsan's Corner</span>
+          </h2>
+          <p>
+            Saya adalah seorang mahasiswa yang sedang menempuh pendidikan Strata
+            1 (S1) pada program studi Ilmu Komputer Universitas Negeri Jakarta
+          </p>
+          <a href="#profile"
+            ><button type="button" id="idButton">Profil Saya</button></a
+          >
+        </article>
+        <article id="skills">
+          <h2 class="title">Skills</h2>
+          <div id="tag">
+            <button id="hardSkillBtn">Hardskill</button>
+            <button id="softSkillBtn">Softskill</button>
+          </div>
+          <div class="hardSkillDesc">
+            <figure class="hardskill">
+              <img
+                src="assets/images/html5-logo.png"
+                alt="Logo HTML"
+                class="sk-img"
+              />
+              <figcaption>HTML</figcaption>
+            </figure>
+            <figure class="hardskill">
+              <img
+                src="assets/images/cssLogo.png"
+                alt="Logo CSS"
+                class="sk-img"
+              />
+              <figcaption>CSS</figcaption>
+            </figure>
+            <figure class="hardskill">
+              <img
+                src="assets/images/javascriptLogo.png"
+                alt="Logo Javascript"
+                class="sk-img"
+              />
+              <figcaption>Javascript</figcaption>
+            </figure>
+
+            <figure class="hardskill">
+              <img
+                src="assets/images/bootstrap5.png"
+                alt="Logo Bootstrap 5"
+                class="sk-img"
+              />
+              <figcaption>Bootstrap 5</figcaption>
+            </figure>
+            <figure class="hardskill">
+              <img
+                src="assets/images/nodejs.svg"
+                alt="Logo Node.js"
+                class="sk-img"
+              />
+              <figcaption>Node.js</figcaption>
+            </figure>
+            <figure class="hardskill">
+              <img
+                src="assets/images/gcpIcon.png"
+                alt="Logo Google Cloud Platform"
+                class="sk-img"
+              />
+              <figcaption>Google Cloud Platform</figcaption>
+            </figure>
+          </div>
+          <div class="softSkillDesc">
+            <figure class="softskill">
+              <img
+                src="assets/images/communication.svg"
+                alt="Communication logo"
+                class="sk-img soft"
+              />
+              <figcaption>Communication</figcaption>
+            </figure>
+            <figure class="softskill">
+              <img
+                src="assets/images/leadership.svg"
+                alt="Leadership Logo"
+                class="sk-img soft"
+              />
+              <figcaption>Leadership</figcaption>
+            </figure>
+            <figure class="softskill">
+              <img
+                src="assets/images/timeManagement.svg"
+                alt="Time Management Logo"
+                class="sk-img soft"
+              />
+              <figcaption>Time Management</figcaption>
+            </figure>
+          </div>
+        </article>
+        <article id="projects">
+          <h2 class="title">Projects</h2>
+          <div class="flex-column">
+            <div class="flex-row center">
+              <section class="cards modal-trigger1">
+                <img
+                  src="assets/images/prunella.png"
+                  alt="Prunella Website Picture"
+                  class="p-img"
+                />
+                <h4>Prunella</h4>
+                <p>
+                  Prunella adalah sebuah startup yang menjual skincare dalam
+                  bentuk full size maupun share in jar. Membuat front-end dari
+                  bagian transaction list, checkout, account
+                </p>
+              </section>
+              <section class="cards">
+                <img
+                  src="assets/images/websiteMicrocredential.png"
+                  alt="Website Microcredential"
+                  class="p-img"
+                />
+                <h4>Website Microcredential</h4>
+                <p>
+                  Website sebagai proyek dari Pelatihan Microcredential
+                  Associate Data Scientist. Mengerjakan bagian frontend pada
+                  website tersebut
+                </p>
+              </section>
             </div>
-        </header>
-        <main>
-            <div id="content">
-                <article id="home">
-                    <h2>
-                        Halo! Selamat Datang di&nbsp;
-                        <span class="logo">Ikhsan's Corner</span>
-                    </h2>
-                    <p>Saya adalah seorang mahasiswa yang sedang menempuh pendidikan Strata 1 (S1) pada program studi Ilmu Komputer Universitas Negeri Jakarta</p>
-                    <a href="#profile"><button type="button" id="idButton">Profil Saya</button></a>
-                </article>
-                <article id="skills">
-                    <h2 class="title">Skills</h2>
-                    <div id="tag">
-                        <button id="hardSkillBtn">Hardskill</button>
-                        <button id="softSkillBtn">Softskill</button>
-                    </div>
-                    <div class="hardSkillDesc">
-                        <figure>
-                            <img src="assets/images/html5-logo.png" alt="Logo HTML" class="sk-img" />
-                            <figcaption>HTML</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="assets/images/cssLogo.png" alt="Logo CSS" class="sk-img" />
-                            <figcaption>CSS</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="assets/images/javascriptLogo.png" alt="Logo CSS" class="sk-img" />
-                            <figcaption>Javascript</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="assets/images/bootstrap5.png" alt="Logo CSS" class="sk-img" />
-                            <figcaption>Bootstrap 5</figcaption>
-                        </figure>
-                    </div>
-                    <div class="softSkillDesc">
-                        <figure class="softskill">
-                            <img src="assets/images/communication.svg" alt="Communication logo" class="sk-img soft" />
-                            <figcaption>Communication</figcaption>
-                        </figure>
-                        <figure class="softskill">
-                            <img src="assets/images/leadership.svg" alt="Leadership Logo" class="sk-img soft" />
-                            <figcaption>Leadership</figcaption>
-                        </figure>
-                        <figure class="softskill">
-                            <img src="assets/images/timeManagement.svg" alt="Time Management Logo" class="sk-img soft" />
-                            <figcaption>Time Management</figcaption>
-                        </figure>
-                    </div>
-                </article>
-                <article id="projects">
-                    <h2 class="title">Projects</h2>
-                    <div class="flex-column">
-                        <div class="flex-row center">
-                            <section class="cards modal-trigger1">
-                                <img src="assets/images/prunella.png" alt="Prunella Website Picture" class="p-img" />
-                                <h4>Prunella</h4>
-                                <p>Prunella adalah sebuah startup yang menjual skincare dalam bentuk full size maupun share in jar. Membuat front-end dari bagian transaction list, checkout, account</p>
-                            </section>
-                            <section class="cards">
-                                <img src="assets/images/websiteMicrocredential.png" alt="Website Microcredential" class="p-img" />
-                                <h4>Website Microcredential</h4>
-                                <p>Website sebagai proyek dari Pelatihan Microcredential Associate Data Scientist. Mengerjakan bagian frontend pada website tersebut</p>
-                            </section>
-                        </div>
-                        <div class="flex-row center">
-                            <section class="cards">
-                                <img src="assets/images/webDefault.png" alt="Website Default UNJ" class="p-img" />
-                                <h4>Website DEFAULT UNJ</h4>
-                                <p>DEFAULT adalah sebuah kelompok studi dari program studi Ilmu Komputer UNJ. Mengerjakan bagian front-end dari bagian vission & mission dan our value</p>
-                            </section>
-                            <section class="cards">
-                                <img src="assets/images/jadwaldotcom.png" alt="Jadwaldotcom Website" class="p-img" />
-                                <h4>Jadwaldotcom</h4>
-                                <p>Jadwaldotcom adalah sebuah website yang digunakan sebagai builder jadwal kuliah. mengerjakan bagian front-end dari website tersebut</p>
-                            </section>
-                        </div>
-                    </div>
-                    <div class="modal-bg-1">
-                        <div class="modal">
-                            <img src="assets/images/prunella.png" alt="Prunella Website Picture" class="b-img" />
-                            <div class="modal-desc">
-                                <h4>Prunella</h4>
-                                <p>Prunella adalah sebuah startup yang menjual skincare dalam bentuk full size maupun share in jar. Membuat front-end dari bagian transaction list, checkout, account</p>
-                            </div>
-                            <span class="modal-close">X</span>
-                        </div>
-                    </div>
-                </article>
-                <article id="certifications">
-                    <h2 class="title">Certifications</h2>
-                    <div class="container">
-                        <section class="box orange">
-                            <h4>Dicoding</h4>
-                            <p>Pengenalan Ke Logika Pemrograman (Programming Logic 101)</p>
-                        </section>
-                        <section class="box">
-                            <h4>Dicoding</h4>
-                            <p>Memulai Dasar Pemrograman Untuk Menjadi Software Developer</p>
-                        </section>
-                        <section class="box orange">
-                            <h4>Dicoding</h4>
-                            <p>Belajar Dasar Git dengan Github</p>
-                        </section>
-                        <section class="box under">
-                            <h4>Dicoding</h4>
-                            <p>Cloud Practicioner Essentials (Belajar Dasar AWS Cloud)</p>
-                        </section>
-                    </div>
-                </article>
-                <article id="activities">
-                    <h2 class="title">Activities</h2>
-                    <section class="box navyblue">
-                        <h4>Bangkit 2022</h4>
-                        <p>14 Februari 2022 - 29 Juli 2022</p>
-                    </section>
-                    <section class="box">
-                        <h4>Mentor Website Study Interest Group DEFAULT (Developing Future and Unyielding Learn of Technology) Computer Science Universitas Negeri Jakarta</h4>
-                        <p>November 2021 - Sekarang</p>
-                    </section>
-                    <section class="box navyblue under">
-                        <h4>Penanggung Jawab Mata Kuliah E-commerce dan Startup Semester 115 (Semester Ganjil 2021)</h4>
-                        <p>Agustus 2021 - Januari 2022</p>
-                    </section>
-                </article>
+            <div class="flex-row center">
+              <section class="cards">
+                <img
+                  src="assets/images/webDefault.png"
+                  alt="Website Default UNJ"
+                  class="p-img"
+                />
+                <h4>Website DEFAULT UNJ</h4>
+                <p>
+                  DEFAULT adalah sebuah kelompok studi dari program studi Ilmu
+                  Komputer UNJ. Mengerjakan bagian front-end dari bagian vission
+                  & mission dan our value
+                </p>
+              </section>
+              <section class="cards">
+                <img
+                  src="assets/images/jadwaldotcom.png"
+                  alt="Jadwaldotcom Website"
+                  class="p-img"
+                />
+                <h4>Jadwaldotcom</h4>
+                <p>
+                  Jadwaldotcom adalah sebuah website yang digunakan sebagai
+                  builder jadwal kuliah. mengerjakan bagian front-end dari
+                  website tersebut
+                </p>
+              </section>
             </div>
-            <aside>
-                <article id="profile">
-                    <img src="assets/images/fotoDiri.jpg" alt="Foto diri Ikhsan" />
-                    <p>Ikhsan Agil Kusuma</p>
-                    <p>Kabupaten Bogor, Jawa Barat</p>
-                    <p>Blora, 10 Desember 2000</p>
-                </article>
-            </aside>
-        </main>
-        <footer>
-            <h3>Find Me On</h3>
-            <a href="https://www.linkedin.com/in/ikhsan-agil-kusuma-2b79b420b" target="blank">
-                <button class="btn-icons">
-                    <i class="fa-brands fa-linkedin"></i>
-                </button>
-            </a>
-            <a href="https://github.com/Ikhsan-Agil" target="blank">
-                <button class="btn-icons">
-                    <i class="fa-brands fa-github"></i>
-                </button>
-            </a>
-            <a href="https://bitbucket.org/ikhsanagil/" target="blank">
-                <button class="btn-icons">
-                    <i class="fa-brands fa-bitbucket"></i>
-                </button>
-            </a>
-            <p>&copy;Copyrights by Website Portofolio Ikhsan</p>
-        </footer>
-        <script src="./assets/javascript/script.js"></script>
-        <script src="./assets/javascript/modal.js"></script>
-    </body>
+          </div>
+          <div class="modal-bg-1">
+            <div class="modal">
+              <img
+                src="assets/images/prunella.png"
+                alt="Prunella Website Picture"
+                class="b-img"
+              />
+              <div class="modal-desc">
+                <h4>Prunella</h4>
+                <p>
+                  Prunella adalah sebuah startup yang menjual skincare dalam
+                  bentuk full size maupun share in jar. Membuat front-end dari
+                  bagian transaction list, checkout, account
+                </p>
+              </div>
+              <span class="modal-close">X</span>
+            </div>
+          </div>
+        </article>
+        <article id="certifications">
+          <h2 class="title">Certifications</h2>
+          <div class="container">
+            <section class="box orange">
+              <h4>Dicoding</h4>
+              <p>Pengenalan Ke Logika Pemrograman (Programming Logic 101)</p>
+            </section>
+            <section class="box">
+              <h4>Dicoding</h4>
+              <p>Memulai Dasar Pemrograman Untuk Menjadi Software Developer</p>
+            </section>
+            <section class="box orange">
+              <h4>Dicoding</h4>
+              <p>Belajar Dasar Git dengan Github</p>
+            </section>
+            <section class="box under">
+              <h4>Dicoding</h4>
+              <p>Cloud Practicioner Essentials (Belajar Dasar AWS Cloud)</p>
+            </section>
+          </div>
+        </article>
+        <article id="activities">
+          <h2 class="title">Activities</h2>
+          <section class="box navyblue">
+            <h4>Bangkit 2022</h4>
+            <p>14 Februari 2022 - 29 Juli 2022</p>
+          </section>
+          <section class="box">
+            <h4>
+              Mentor Website Study Interest Group DEFAULT (Developing Future and
+              Unyielding Learn of Technology) Computer Science Universitas
+              Negeri Jakarta
+            </h4>
+            <p>November 2021 - Sekarang</p>
+          </section>
+          <section class="box navyblue under">
+            <h4>
+              Penanggung Jawab Mata Kuliah E-commerce dan Startup Semester 115
+              (Semester Ganjil 2021)
+            </h4>
+            <p>Agustus 2021 - Januari 2022</p>
+          </section>
+        </article>
+      </div>
+      <aside>
+        <article id="profile">
+          <img src="assets/images/fotoDiri.jpg" alt="Foto diri Ikhsan" />
+          <p>Ikhsan Agil Kusuma</p>
+          <p>Kabupaten Bogor, Jawa Barat</p>
+          <p>Blora, 10 Desember 2000</p>
+        </article>
+      </aside>
+    </main>
+    <footer>
+      <h3>Find Me On</h3>
+      <a
+        href="https://www.linkedin.com/in/ikhsan-agil-kusuma-2b79b420b"
+        target="blank"
+      >
+        <button class="btn-icons">
+          <i class="fa-brands fa-linkedin"></i>
+        </button>
+      </a>
+      <a href="https://github.com/Ikhsan-Agil" target="blank">
+        <button class="btn-icons">
+          <i class="fa-brands fa-github"></i>
+        </button>
+      </a>
+      <a href="https://bitbucket.org/ikhsanagil/" target="blank">
+        <button class="btn-icons">
+          <i class="fa-brands fa-bitbucket"></i>
+        </button>
+      </a>
+      <p>&copy;Copyrights by <span class="logo">Ikhsan's Corner</span></p>
+    </footer>
+    <script src="./assets/javascript/script.js"></script>
+    <script src="./assets/javascript/modal.js"></script>
+  </body>
 </html>
