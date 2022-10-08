@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <script
-      src="https://kit.fontawesome.com/2a1c0f1c85.js"
+      src="https://kit.fontawesome.com/5b0a2e9ab0.js"
       crossorigin="anonymous"
     ></script>
   </head>
@@ -20,6 +20,7 @@
         <button id="close">&#10005;</button>
         <nav>
           <ul>
+            <li><a href="#home" id="homeNav">About Me</a></li>
             <li><a href="#skills" id="skillNav">Skills</a></li>
             <li><a href="#projects" id="projectNav">Projects</a></li>
             <li>
@@ -32,19 +33,28 @@
     </header>
     <main>
       <div id="content">
+        <aside>
+          <article id="profile">
+            <img src="assets/images/fotoDiri.jpg" alt="Foto diri Ikhsan" />
+            <h2>Ikhsan Agil Kusuma | DevOps Intern</h2>
+          </article>
+        </aside>
         <article id="home">
-          <h2>
-            Halo! Selamat Datang di&nbsp;
-            <span class="logo">Ikhsan's Corner</span>
-          </h2>
-          <p>
-            Saya adalah seorang mahasiswa yang sedang menempuh pendidikan Strata
-            1 (S1) pada program studi Ilmu Komputer Universitas Negeri Jakarta
-          </p>
-          <a href="#profile"
+          <div class="container">
+            <h2>About Me</h2>
+            <p>
+              Saya adalah seorang mahasiswa yang sedang menempuh pendidikan
+              Strata 1 (S1) pada program studi Ilmu Komputer Universitas Negeri
+              Jakarta dan merupakan lulusan Bangkit 2022 pada alur belajar Cloud
+              Computing. Saat ini, saya sedang menjalani magang dengan posisi
+              sebagai DevOps pada perusahaan Central AI.
+            </p>
+            <!-- <a href="#profile"
             ><button type="button" id="idButton">Profil Saya</button></a
-          >
+          > -->
+          </div>
         </article>
+
         <article id="skills">
           <h2 class="title">Skills</h2>
           <div id="tag">
@@ -129,6 +139,7 @@
             </figure>
           </div>
         </article>
+
         <article id="projects">
           <h2 class="title">Projects</h2>
           <div class="flex-column">
@@ -189,7 +200,7 @@
               </section>
             </div>
           </div>
-          <div class="modal-bg-1">
+          <!-- <div class="modal-bg-1">
             <div class="modal">
               <img
                 src="assets/images/prunella.png"
@@ -206,18 +217,46 @@
               </div>
               <span class="modal-close">X</span>
             </div>
-          </div>
+          </div> -->
         </article>
+
         <article id="certifications">
           <h2 class="title">Certifications</h2>
           <div class="container">
+            <section class="box orange">
+              <h4>Coursera</h4>
+              <p>Architecting with Google Compute Engine Specialization</p>
+            </section>
+            <section class="box">
+              <h4>Qwiklabs</h4>
+              <p>Google CLoud Skills Boost Badges</p>
+            </section>
+            <section class="box orange">
+              <h4>Coursera</h4>
+              <p>Preparing for Your Associate Cloud Engineer Journey</p>
+            </section>
+            <section class="box">
+              <h4>Dicoding</h4>
+              <p>Meniti Karier sebagai Software Developer</p>
+            </section>
+            <section class="box orange">
+              <h4>Dicoding</h4>
+              <p>
+                Belajar Membuat Aplikasi Back-End untuk Pemula dengan Google
+                Cloud
+              </p>
+            </section>
+            <section class="box">
+              <h4>Dicoding</h4>
+              <p>Belajar Dasar Pemrograman Javascript</p>
+            </section>
             <section class="box orange">
               <h4>Dicoding</h4>
               <p>Pengenalan Ke Logika Pemrograman (Programming Logic 101)</p>
             </section>
             <section class="box">
               <h4>Dicoding</h4>
-              <p>Memulai Dasar Pemrograman Untuk Menjadi Software Developer</p>
+              <p>Memulai Dasar Pemrograman Untuk Menjadi Pengembang Software</p>
             </section>
             <section class="box orange">
               <h4>Dicoding</h4>
@@ -229,13 +268,18 @@
             </section>
           </div>
         </article>
+
         <article id="activities">
           <h2 class="title">Activities</h2>
           <section class="box navyblue">
-            <h4>Bangkit 2022</h4>
-            <p>14 Februari 2022 - 29 Juli 2022</p>
+            <h4>DevOps Intern at Central AI</h4>
+            <p>16 Agustus 2022 - 31 Desember 2022</p>
           </section>
           <section class="box">
+            <h4>Cloud Computing Participant at Bangkit 2022</h4>
+            <p>14 Februari 2022 - 29 Juli 2022</p>
+          </section>
+          <section class="box navyblue">
             <h4>
               Mentor Website Study Interest Group DEFAULT (Developing Future and
               Unyielding Learn of Technology) Computer Science Universitas
@@ -243,7 +287,7 @@
             </h4>
             <p>November 2021 - Sekarang</p>
           </section>
-          <section class="box navyblue under">
+          <section class="box under">
             <h4>
               Penanggung Jawab Mata Kuliah E-commerce dan Startup Semester 115
               (Semester Ganjil 2021)
@@ -252,14 +296,6 @@
           </section>
         </article>
       </div>
-      <aside>
-        <article id="profile">
-          <img src="assets/images/fotoDiri.jpg" alt="Foto diri Ikhsan" />
-          <p>Ikhsan Agil Kusuma</p>
-          <p>Kabupaten Bogor, Jawa Barat</p>
-          <p>Blora, 10 Desember 2000</p>
-        </article>
-      </aside>
     </main>
     <footer>
       <h3>Find Me On</h3>

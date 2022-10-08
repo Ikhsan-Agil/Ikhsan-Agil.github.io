@@ -22,6 +22,7 @@ close.addEventListener("click", function (event) {
 });
 
 // for navigation button
+let homeNav = document.querySelector("#homeNav");
 let skillNav = document.querySelector("#skillNav");
 let projectNav = document.querySelector("#projectNav");
 let certificationNav = document.querySelector("#certificationNav");
@@ -30,7 +31,21 @@ let h1 = document.querySelector("h1");
 let hpMedia = window.matchMedia("(max-width: 480px)");
 let littleTabMedia = window.matchMedia("(max-width: 840px)");
 
+homeNav.addEventListener("click", function (event) {
+  homeNav.setAttribute("style", "text-shadow: 2px 2px 10px #ffffff;");
+  skillNav.setAttribute("style", "text-shadow: none;");
+  projectNav.setAttribute("style", "text-shadow: none;");
+  certificationNav.setAttribute("style", "text-shadow: none;");
+  activitiesNav.setAttribute("style", "text-shadow: none;");
+  if (hpMedia.matches || littleTabMedia.matches) {
+    navbar.classList.remove("nav-click");
+    hamburger.setAttribute("style", "display: block;");
+    close.setAttribute("style", "display: none;");
+  }
+});
+
 skillNav.addEventListener("click", function (event) {
+  homeNav.setAttribute("style", "text-shadow: none;");
   skillNav.setAttribute("style", "text-shadow: 2px 2px 10px #ffffff;");
   projectNav.setAttribute("style", "text-shadow: none;");
   certificationNav.setAttribute("style", "text-shadow: none;");
@@ -43,6 +58,7 @@ skillNav.addEventListener("click", function (event) {
 });
 
 projectNav.addEventListener("click", function (event) {
+  homeNav.setAttribute("style", "text-shadow: none;");
   skillNav.setAttribute("style", "text-shadow: none;");
   projectNav.setAttribute("style", "text-shadow: 2px 2px 10px #ffffff;");
   certificationNav.setAttribute("style", "text-shadow: none;");
@@ -55,6 +71,7 @@ projectNav.addEventListener("click", function (event) {
 });
 
 certificationNav.addEventListener("click", function (event) {
+  homeNav.setAttribute("style", "text-shadow: none;");
   skillNav.setAttribute("style", "text-shadow: none;");
   projectNav.setAttribute("style", "text-shadow: none;");
   certificationNav.setAttribute("style", "text-shadow: 2px 2px 10px #ffffff;");
@@ -67,6 +84,7 @@ certificationNav.addEventListener("click", function (event) {
 });
 
 activitiesNav.addEventListener("click", function (event) {
+  homeNav.setAttribute("style", "text-shadow: none;");
   skillNav.setAttribute("style", "text-shadow: none;");
   projectNav.setAttribute("style", "text-shadow: none;");
   certificationNav.setAttribute("style", "text-shadow: none;");
@@ -79,6 +97,7 @@ activitiesNav.addEventListener("click", function (event) {
 });
 
 h1.addEventListener("click", function (event) {
+  homeNav.setAttribute("style", "text-shadow: none;");
   skillNav.setAttribute("style", "text-shadow: none;");
   projectNav.setAttribute("style", "text-shadow: none;");
   certificationNav.setAttribute("style", "text-shadow: none;");
